@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mi Proyecto Bootstrap</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS propio -->
+  <link rel="stylesheet" href="CSS/Estilos.css">
+
+</head>
+<body>
+      <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Proyecto Final</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menu"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Inicio</a>
+          </li>
+          <!--
+          <li class="nav-item">
+            <a class="nav-link" href="#">Servicios</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+        -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!--
+  <div>
+      <video src="IMG/Fondo2.mp4" autoplay loop muted></video>
+    </div> 
+  -->
+
+   <!--CARUSEL-->
+
+  <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div>
+        <video src="IMG/Fondo1.mp4" autoplay loop muted>
+      </div>
+  
+        <h1 class="titulo1"><u><b><i>ESTRUCTURA DE DATOS</i></b></u></h1>
+        <img class="img1" src="IMG/Imagen1.jpg" alt="Imagen1">        
+    </div>
+
+    <div class="carousel-item">
+      <!--
+      <img src="IMG/Imagen1.jpg" class="d-block w-100" alt="Imagen1"> -->
+      
+        <img class="Fondo2" src="IMG/img5.jpg" alt="Imagen2"> 
+        <div class="titulo2"><h1 class="t2" align="center">COLAS</H1></div>
+        <img class="img2" src="IMG/IMG1.webp" alt="Imagen2"> 
+        <div class="parrafo1">
+          <p>
+            En programación, una cola (queue) 
+            es una estructura de datos que sigue el principio FIFO (First In, First Out): 
+            el primero en entrar es el primero en salir.
+          </p>
+        </div>
+      
+ 
+    </div>
+    <div class="carousel-item">
+      <img class="Fondo2" src="IMG/img1.jpg" alt="Imagen2"> 
+        <div class="titulo3"><h1 class="t2" align="center">COLA SIMPLE</H1></div>
+        <img class="img3" src="IMG/cola-3.png" alt="Imagen2"> 
+        <div class="parrafo2">
+          <p>
+            El primer dato añadido es el primero que se elimina, 
+            similar a una fila en una taquilla o supermercado.
+          </p>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="carousel-item">
+      <img class="Fondo2" src="IMG/img1.jpg" alt="Imagen2"> 
+        <div class="titulo3"><h1 class="t2" align="center">COLA CIRCULAR</H1></div>
+        <img class="img3" src="IMG/estru2.jpg" alt="Imagen2"> 
+        <div class="parrafo2">
+          <p>
+             El último elemento 
+             se conecta con el primero para formar un anillo. Esto permite reutilizar 
+             el espacio de memoria liberado cuando se extraen elementos.
+          </p>
+        </div>
+    </div>
+    
+    <div class="carousel-item">
+      <img class="Fondo2" src="IMG/img1.jpg" alt="Imagen2"> 
+        <div class="titulo3"><h1 class="t2" align="left">COLA DE PRIORIDAD</H1></div>
+        <img class="img3" src="IMG/prioridad.jpg" alt="Imagen2"> 
+        <div class="parrafo2">
+          <p>
+            Los elementos 
+             se atienden según su valor de prioridad y no por el orden en que llegan. 
+             Si dos elementos tienen la misma prioridad, se utiliza su orden de llegada. 
+          </p>
+        </div>
+    </div> 
+
+     <div class="carousel-item">
+      <img class="Fondo2" src="IMG/img1.jpg" alt="Imagen2"> 
+        <div class="titulo3"><h1 class="t2" align="center">COLA DOBLE</H1></div>
+        <img class="img3_1" src="IMG/basicdeque.png" alt="Imagen2"> 
+        <div class="parrafo2">
+          <p>
+             Estructura de datos lineal que permite insertar y eliminar elementos 
+             por ambos extremos (frente y final). A diferencia de una cola simple, 
+             rompe la regla estricta de primero en entrar, primero en salir (FIFO)
+          </p>
+        </div>
+    </div>
+
+    <div class="carousel-item">
+      <img class="Fondo2" src="IMG/img4.JPG" alt="Imagen2"> 
+        <div class="titulo3"><h1 class="t2" align="center">OPERACIONES BASICAS</H1></div>
+        <img class="img3_2" src="IMG/IMG2.webp" alt="Imagen2"> 
+    </div>
+
+    <div class="carousel-item">
+      <img class="Fondo2" src="IMG/img7.webp" alt="Imagen2"> 
+        <div class="parrafo2_1">   
+          <p>OPERACIONES BASICAS DE COLAS</p>     
+            <ul>
+            <li>Enqueue: insertar un elemento.</li>
+            <li>Dequeue: eliminar el primer elemento.</li>
+            <li>Front/Peek: ver el primer elemento sin eliminarlo.</li>
+            <li>IsEmpty: comprobar si está vacía.</li>
+            </ul>  
+        </div>
+        <video class= "video" src="IMG/Fondo2.mp4" autoplay loop muted></video>
+    </div>
+
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>     
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
